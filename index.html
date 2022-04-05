@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+  </head>
+  <body>
+    <h1>My Task Manager</h1>
+    <main>
+      <section id="sect-list">
+          <button id="btnTogglePanel">Show/Hide Panel</button>
+      </section>
+      <section id="sect-form">
+        <h3>Task Information</h3>
+        <div class="control">
+            <label>Important ?</label>
+            <i id="iImportant" class="fas fa-star importantIcon"></i>
+          </div>
+        
+        <div class="control mb-3">
+          <label>Title</label>
+          <input type="text" />
+        </div>
+
+        <div class="control">
+          <label>Description</label>
+          <textarea rows="3"></textarea>
+        </div>
+
+        <div class="control">
+          <label>Color</label>
+          <input type="color" />
+        </div>
+
+        <div class="control">
+          <label>Due Date</label>
+          <input type="date" />
+        </div>
+
+        <div class="control">
+          <label>Start Date</label>
+          <input type="date" />
+        </div>
+
+        <div class="control">
+          <label>Category</label>
+          <select>
+            <option value="1">Home</option>
+            <option value="2">Work</option>
+            <option value="3">Personal</option>
+            <option value="4">Family</option>
+          </select>
+        </div>
+        <div class="control">
+          <button class="btn">Register Task</button>
+        </div>
+      </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
